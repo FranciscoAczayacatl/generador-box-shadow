@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box shadows</title>
+  <link rel="stylesheet" href="styles/normalise.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Gujarati:wght@200;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="controls">
+      <div class="title-controls"><h1>CONTROLS</h1></div>
+      <form>
+        <div class="title-content">
+          <h2>BOX:</h2>
+        </div>
+        <div class="contain-controls">
+          <div class="content-value">
+            <p>Width:</p>
+            <p id="width-value">200</p>
+            <p>px</p>
+          </div>
+          <input type="range" id="width" min="1" max="400">
+        </div>
+        <div class="contain-controls">
+          <div class="content-value">
+            <p>Height:</p>
+            <p id="height-value">200</p>
+            <p>px</p>
+          </div>
+          <input type="range" id="height" min="1" max="400">
+        </div>
+        <div class="contain-controls">
+          <div class="content-value">
+            <p>Border Radius:</p>
+            <p id="borde-r-value">0</p>
+            <p>%</p>
+          </div>
+          <input type="range" id="border-radius" min="0" max="50" value="0">
+        </div>
+        <div class="contain-controls-color">
+          <p>color:</p>
+          <input type="color" name="" id="color-box" value="#FFFFFF">
+        </div>
+
+        <div class="title-content">
+          <h2>BOX-SHADOW:</h2>
+        </div>
+        <div class="contain-controls">
+          <div class="content-value">
+            <p>Horizontal:</p>
+            <p id="horizontal-value">0</p>
+            <p>px</p>
+          </div>
+          <input type="range" id="horizontal" min="-100" max="100" value="0" >
+        </div>
+        <div class="contain-controls">
+          <div class="content-value">
+            <p>Vertical:</p>
+            <p id="vertical-value">0</p>
+            <p>px</p>
+          </div>
+          <input type="range" id="vertical" min="-100" max="100" value="0">
+        </div>
+        <div class="contain-controls">
+          <div class="content-value">
+            <p>Blur Radius:</p>
+            <p id="blur-radius-value">0</p>
+            <p>px</p>
+          </div>
+          <input type="range" id="blur-radius" value="0">
+        </div>
+        <div class="contain-controls">
+          <div class="content-value">
+            <p>Spread Radius:</p>
+            <p id="spread-radius-value">0</p>
+            <p>px</p>
+          </div>
+          <input type="range" id="spread-radius" min="-100" max="100" value="0">
+        </div>
+        <div class="contain-controls-color">
+          <p>color:</p>
+          <input type="color" name="" id="color-box-shadow" value="#000000">
+        </div>
+        <div class="contain-button">
+          <input type="button" value="SHOW CODE" id="button">
+        </div>
+        
+      </form>
+    </div>
+    <div class="ventanita-container">
+      <div class="ventanita">
+        <h1>El codigo es:</h1>
+        <div class="code">
+          <p>.box{</p>
+            <p class="width-code">width:200;</p>
+            <p class="height-code">height:200;</p>
+            <p class="border-radius-code">border-radius:0%;</p>
+            <p class="background-color-code">background-color:#FFFFFF;</p>
+            <p class="box-shadow-code">box-shadow: 0px 0px 0px 0px #000000;</p>
+            <p>}</p>
+        </div>
+        <input type="button" value="OK" id="ok">
+      </div>
+    </div>
+    <div class="box-container">
+      <div class="box"></div>
+    </div>
+  
+</body>
+<script src="app.js"></script>
+</html>
